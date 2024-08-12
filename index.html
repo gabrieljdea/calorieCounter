@@ -1,0 +1,67 @@
+!DOCTYPE html
+html lang=en
+  head
+    meta charset=utf-8 
+    meta name=viewport content=width=device-width, initial-scale=1.0 
+    link rel=stylesheet href=styles.css 
+    titleCalorie Countertitle
+  head
+  body
+    main
+      h1Calorie Counterh1
+      div class=container
+        form id=calorie-counter
+          label for=budgetBudgetlabel
+          input
+            type=number
+            min=0
+            id=budget
+            placeholder=Daily calorie budget
+            required
+          
+          fieldset id=breakfast
+            legendBreakfastlegend
+            div class=input-containerdiv
+          fieldset
+          fieldset id=lunch
+            legendLunchlegend
+            div class=input-containerdiv
+          fieldset
+          fieldset id=dinner
+            legendDinnerlegend
+            div class=input-containerdiv
+          fieldset
+          fieldset id=snacks
+            legendSnackslegend
+            div class=input-containerdiv
+          fieldset
+          fieldset id=exercise
+            legendExerciselegend
+            div class=input-containerdiv
+          fieldset
+          div class=controls
+            span
+              label for=entry-dropdownAdd food or exerciselabel
+              select id=entry-dropdown name=options
+                option value=breakfast selectedBreakfastoption
+                option value=lunchLunchoption
+                option value=dinnerDinneroption
+                option value=snacksSnacksoption
+                option value=exerciseExerciseoption
+              select
+              button type=button id=add-entryAdd Entrybutton
+            span
+          div
+          div
+            button type=submit
+              Calculate Remaining Calories
+            button
+            button type=button id=clearClearbutton
+          div
+        form
+        div id=output class=output hidediv
+      div
+    main
+    script src=.script.jsscript
+  body
+html
